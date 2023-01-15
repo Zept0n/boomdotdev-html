@@ -2,16 +2,14 @@ import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
+  /* There must be a fire emoji next to the price when it has the .hot class
+     The price must not include any new child elements */
 
-  // Get all elements with the class 'product'
-  var products = document.getElementsByClassName("product");
+  let hot = document.getElementsByClassName("hot");
 
-  // Loop through each product
-  for (var i = 0; i < products.length; i++) {
-    // Get the price of the product
-    var price = products[i].getElementsByClassName("price")[0].textContent;
 
-    // Add the 'data-price' attribute to the product element
-    products[i].setAttribute("data-price", price);
+    // Add the fire emoji to the price
+  for (let i = 0; i < hot.length; i++) { 
+    hot[i].textContent+=' 🔥';
   }
 });
