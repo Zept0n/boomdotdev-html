@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /* There must be a fire emoji next to the price when it has the .hot class
      The price must not include any new child elements */
 
-  let hot = document.getElementsByClassName("hot");
+  let hot = document.querySelectorAll(".hot");
 
 
     // Add the fire emoji to the price
