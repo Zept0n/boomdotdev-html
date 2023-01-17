@@ -1,107 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>HTML, CSS and SASS Boilerplate</title>
-  <meta name="description" content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-
-<body>
-  <header class="title">
-    <h1 class="title">SUPER DELICIOUS PIZZA</h1>
-  </header>
-
-  <nav class="navbar">
-    <ul>
-      <li>
-        <a class="navbar-item">Home</a>
-      </li>
-      <li>
-        <a class="navbar-item">Pizza</a>
-      </li>
-      <li>
-        <a class="navbar-item">Delivery</a>
-      </li>
-    </ul>
-  </nav>
-  <main class="content">
-    <div class="card">
-      <div class="card-image">
-        <img src="https://boomcdn.fra1.digitaloceanspaces.com/4e77b8aa9e8960f957fd9afdafc55251.png" />
-      </div>
-      <div class="card-content">
-        <p class="description">Pizza Menu</p>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML, CSS and SASS Boilerplate</title>
+    <meta
+      name="description"
+      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <input class="input" type="email" name="email">
+        <input class="input" type="text" name="name">
+        <input class="input" type="text" name="address">
+        <input class="input" type="tel" name="phone">
+        <input class="input" type="color" name="color">
+        <input class="input" type="date" name="delivery_date">
+      </form>
+      <div class="emoji mb-6">💣🤯💥</div>
+      <button class="button">Boom?</button>
     </div>
-
-    <div class="card">
-      <div class="card-image">
-        <img src="https://boomcdn.fra1.digitaloceanspaces.com/5dd219737236308d71f6d0b5137b7b04.png" />
-      </div>
-      <div class="card-content">
-        <p class="description">Pizza Slices</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image">
-        <img src="https://boomcdn.fra1.digitaloceanspaces.com/f1d9d80bc22aa860aba55b4644dfd6d2.png" />
-      </div>
-      <div class="card-content">
-        <p class="description">Make your own pizza</p>
-      </div>
-    </div>
-
-    <aside class="sidebar">
-      <h2>Best Sellers</h2>
-      <ul>
-        <li>
-          <a>🍕 Margarita</a>
-        </li>
-        <li>
-          <a>🍕 Peperoni</a>
-        </li>
-        <li>
-          <a>🍕 Pizza with pineapple</a>
-        </li>
-        <li>
-          <a>🍕 Quattro formagi</a>
-        </li>
-        <li>
-          <a>🍕 Vegetarianna</a>
-        </li>
-      </ul>
-    </aside>
-  </main>
-
-  <footer class="footer">
-    <a>Contact us</a>
-    <a>Privacy policy</a>
-  </footer>
-</body>
-
+  </body>
 </html>
 
-<!-- 
-Create a web app layout using the HTML layout elements
-When implemented, merge the dev branch into master before validating
+
+<!-- Create a checkout form which includes the personal details of the customer
+When implemented merge the dev branch into master before validating
 Requirements
-Implement your changes in the index.html file which is located in the src/index.html folder
-
-Create a header element that wraps the 'h1' element with class 'title'
-
-Create navigation using the nav element and add class 'navbar' to it
-
-
-The navigation element must wrap the unordered list ul with list items (li), which holds 3 anchor tags with the text 'Home', 'Pizza', and 'Delivery'
-
-Create an aside element and add class 'sidebar' to it
-The aside element must wrap the h2 element with text "Best Sellers" and the following unordered list (ul) with different pizzas
-
-Create a main element with class 'content'
-The main element must wrap the 3 div elements with class 'card' and the aside element with class 'sidebar'
-
-
-Create a footer element with class 'footer' and wrap the "Contact us" and "Privacy Policy" links with it -->
+The project must run when started via npm run start
+The form must contain an input type email with the name "email" with an input class
+The form must contain an input type text with the name "name" with an input class
+The form must contain an input type text with the name "address" with an input class
+The form must contain an input type tel with the name "phone" with an input class
+The form must contain an input type color with the name "color" with an input class
+The form must contain an input type date with the name "delivery_date" with an input class -->
