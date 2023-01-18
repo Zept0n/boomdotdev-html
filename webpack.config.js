@@ -7,7 +7,6 @@ const fs = require('fs');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { extendDefaultPlugins } = require('svgo');
 
@@ -102,9 +101,6 @@ module.exports = {
       verbose: true,
       cleanOnceBeforeBuildPatterns: ['**/*', '!stats.json'],
     }),
-    new CopyPlugin({'patterns': [
-        {from:'./src/images', to:'images'}
-    ]}),
   ].concat(htmlPluginEntries),
   target: 'web',
 };
