@@ -1,44 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="box">
-        <figure>
-          <img
-            src="	https://i.ibb.co/nQ2XH3L/profile.png"
-            alt="profile-photo"
-            width="250"
-            height="250"
-          />
-        </figure>
-        <p class="title is-4 mt-5">John Smith</p>
-        <p class="subtitle is-6">@johnsmith</p>
-        <div class="contacts">
-          <!-- m.mail@example.com -->
-          <a href='mailto:'class="contacts">Mail</a>
-          <a href='tel:' class="contacts">Phone</a>
-          <!-- +12345678 -->
-        </div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML, CSS and SASS Boilerplate</title>
+  <meta name="description" content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <h1>
+
+    <div class="title">
+      <button class="dropdown button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <h1>Fitness App</h1>
     </div>
-  </body>
+
+    <nav class="navigation closed">
+      <a class="navbar-item">Exercises</a>
+      <a class="navbar-item">Diet</a>
+      <a class="navbar-item">Supplements</a>
+      <a class="navbar-item">Rest advices</a>
+    </nav>
+
+  </h1>
+  <main>
+
+    <div class="picture">
+      <img src="https://boomcdn.fra1.digitaloceanspaces.com/92a1b85c7861515d6caa589a34574969.png" />
+    </div>
+
+    <article>
+
+      <section class="description">
+        <div class="box">
+          <a>Enter your workout to track your progress</a>
+        </div>
+      </section>
+
+      <section class="goal">
+        <label class="label"> Your Goal </label>
+        <progress class="progress is-success is-large" value="60" max="100">
+          60%
+        </progress>
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="buttons">
+      <button class="button is-large">
+        <i class="fa-solid fa-dumbbell"></i>
+      </button>
+
+      <button class="button is-large">
+        <i class="fa-solid fa-house"></i>
+      </button>
+
+      <button class="button is-large">
+        <i class="fa-solid fa-apple-whole"></i>
+      </button>
+    </div>
+  </footer>
+  <script>
+    document.querySelector(".dropdown").addEventListener("click", () => {
+      const nav = document.querySelector(".navigation");
+      if (nav.classList.contains("closed")) {
+        nav.classList.remove("closed");
+      } else {
+        nav.classList.add("closed");
+      }
+    });
+  </script>
+</body>
+
 </html>
+
 
 
 <!-- Requirements
 Implement your changes in the index.html file which is located in the src/index.html folder
-You must add a element with content Mail inside the element with class name contacts
-You must add a element with content Phone inside the element with class name contacts
-You must add href attribute to the first a element by using the correct attribute value and email
-You must add href attribute to the second a element by using the correct attribute value and phone
-Tips
-If needed, read more about the <a> element here -->
+Change the div element with class 'navigation' to become a nav element
+The new nav element must wrap the a tags with class 'navbar-item'
+Add a header element
+Wrap the element with class title with the new header element
+Also wrap the element with class 'navigation' with the new header element
+Change the div element with class 'description' to become a section element
+Add a section element with class 'goal' which wraps the label and progress elements
+Add an article element that wraps the two sections
+Add a main element which wraps the div with class picture and the article element
+Add a footer element which wraps the div element with class buttons
+Guides
+See this guide on simulating a mobile device in the Chrome DevTools
+Div elements and layout elements act the same way but the layout elements add a semantic meaning -->
